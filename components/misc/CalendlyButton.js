@@ -7,7 +7,7 @@ const CalendlyButton = ({fileTitle, fileName, txtUrl}) => {
 				onClick={() => document.getElementById('my_modal_1').showModal()}
 				className="btn btn-outline btn btn-successpy-2 px-5 sm:px-8 bg-white-100 border-blue-800 text-blue-800 bg-white-800 hover:bg-blue-200 hover:border-blue-800 hover:text-blue-800 transition-all hover:shadow-blue-200"
 			>
-				<img src="/assets/Icon/calendario.png" alt="Icono" className="mr-2"/>
+				<img src="/assets/icon/calendario.png" alt="Icono" className="mr-2"/>
 				{fileName}
 			</button>
 			<dialog id="my_modal_1" className="modal">

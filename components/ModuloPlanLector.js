@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React, {useMemo, useState} from "react";
+import React, {useMemo} from "react";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import {Link as LinkScroll} from "react-scroll";
 
 const ModuloPlanLector = ({grado, imagen, botonesPlanLector}) => {
-    const [activeLink, setActiveLink] = useState(null);
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
     return (
@@ -37,17 +36,6 @@ const ModuloPlanLector = ({grado, imagen, botonesPlanLector}) => {
                                     los libros.
                                     <div>
                                         <strong>Conoce más sobre el plan lector con nuestro video explicativo.</strong>
-                                        {/*<div>*/}
-                                        {/*    <a*/}
-                                        {/*        href={hrefVideo}*/}
-                                        {/*        target="_blank"*/}
-                                        {/*        rel="noopener noreferrer"*/}
-                                        {/*        className="btn btn-outline py-2 px-5 sm:px-8 border-red-400 text-red-400 bg-white-500 hover:bg-red-600 hover:text-red-400 transition-all hover:shadow-red-600"*/}
-                                        {/*    >*/}
-                                        {/*        <img src={"/assets/Icon/youtube.png"} alt="Icono" className="mr-2"/>*/}
-                                        {/*        {textVideo}*/}
-                                        {/*    </a>*/}
-                                        {/*</div>*/}
                                     </div>
                                 </div>
                             </motion.div>
@@ -80,7 +68,6 @@ const ModuloPlanLector = ({grado, imagen, botonesPlanLector}) => {
                                         spy={true}
                                         smooth={true}
                                         duration={1000}
-                                        onSetActive={() => setActiveLink(botonesPlanLector.id)}
                                         className="btn btn-outline py-2 px-5 sm:px-8 border-blue-400 text-blue-400 bg-white-500 hover:bg-blue-700 hover:text-blue-400 transition-all hover:shadow-blue-700"
                                         style={{minWidth: "200px"}}
                                     >

@@ -1,7 +1,7 @@
-/* purgecss start ignore */
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 html {
   font-family: "Rubik", sans-serif;
@@ -41,13 +41,13 @@ li.custom-list:before {
   @apply absolute block;
 }
 li.circle-check:before {
-  background-image: url("/assets/Icon/checklist.svg");
+  background-image: url("/assets/icon/checklist.svg");
   left: -0.7em;
   top: -0.4em;
 }
 li.check:before {
   left: -0.5em;
-  background-image: url("/assets/Icon/jam_check.svg");
+  background-image: url("/assets/icon/jam_check.svg");
   top: -0.5em;
   font-size: 400%;
 }
@@ -62,7 +62,4 @@ li.check:before {
   @apply bg-blue-500 rounded-l-full rounded-r-full w-12;
 }
 
-/* purgecss end ignore */
-@tailwind utilities;
-/* purgecss start ignore */
-/* purgecss end ignore */
+

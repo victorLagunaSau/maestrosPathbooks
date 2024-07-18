@@ -35,7 +35,7 @@ const ComponentToPrint = React.forwardRef(({fichaLectura, lectura, lecturaProper
                             {fichaLectura.audiobook ? (
                                 <div className="flex items-center">
                                     <img
-                                        src="/assets/Icon/audiook.png"
+                                        src="/assets/icon/audiook.png"
                                         alt="Icono"
                                         style={{width: "25px", height: "25px"}}
                                     />
@@ -46,7 +46,7 @@ const ComponentToPrint = React.forwardRef(({fichaLectura, lectura, lecturaProper
                             ) : (
                                 <div className="flex items-center">
                                     <img
-                                        src="/assets/Icon/audiooff.png"
+                                        src="/assets/icon/audiooff.png"
                                         alt="Icono"
                                         style={{width: "25px", height: "25px"}}
                                     />

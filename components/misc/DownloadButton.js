@@ -7,23 +7,23 @@ const DownloadButton = ({ buttonName, fileUrl, fileName, fileTipo }) => {
   const fileConfig = {
     PDF: {
       buttonClass: 'btn btn-outline py-2 px-5 sm:px-8 bg-white-100 border-red-500 text-red-500 bg-white-500 hover:bg-red-200 hover:border-red-500 hover:text-red-500 transition-all hover:shadow-red-200',
-      iconSrc: '/assets/Icon/pdf.png',
+      iconSrc: '/assets/icon/pdf.png',
     },
     Excel: {
       buttonClass: 'btn btn-outline py-2 px-5 sm:px-8 bg-white-100 border-green-500 text-green-500 bg-white-500 hover:bg-green-200 hover:border-green-500 hover:text-green-500 transition-all hover:shadow-green-200',
-      iconSrc: '/assets/Icon/excel.png',
+      iconSrc: '/assets/icon/excel.png',
     },
     Word: {
       buttonClass: 'btn btn-outline btn-primary',
-      iconSrc: '/assets/Icon/word-icon.png',
+      iconSrc: '/assets/icon/word-icon.png',
     },
     Imagen: {
       buttonClass: 'btn btn-outline py-2 px-5 sm:px-8 bg-white-100 border-warning text-warning bg-white-500 hover:bg-orange-100 hover:border-warning hover:text-warning transition-all hover:shadow-orange-100',
-      iconSrc: '/assets/Icon/imagen.png',
+      iconSrc: '/assets/icon/imagen.png',
     },
     PowerPoint: {
       buttonClass: 'btn btn-outline py-2 px-5 sm:px-8 bg-white-100 border-orange-600 text-orange-600 bg-white-500 hover:bg-orange-200 hover:border-orange-600 hover:text-orange-600 transition-all hover:shadow-orange-100',
-      iconSrc: '/assets/Icon/powerpoint.png',
+      iconSrc: '/assets/icon/powerpoint.png',
     },
   };
 

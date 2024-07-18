@@ -16,7 +16,7 @@ const CopyButton = ({textToCopy, fileName}) => {
 				onClick={handleCopy}
 				className="btn btn-outline py-2 px-5 sm:px-8 bg-white-100 border-blue-200 text-blue-500 bg-white-500 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-500 transition-all hover:shadow-blue-200"
 			>
-				<img src="/assets/Icon/copiar.png" alt="Icono" className="mr-2"/>
+				<img src="/assets/icon/copiar.png" alt="Icono" className="mr-2"/>
 				{fileName}
 			</button>
 		</div>
