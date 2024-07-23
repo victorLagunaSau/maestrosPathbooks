@@ -3,7 +3,7 @@ import SeoHead from "../components/SeoHead";
 import Layout from "../components/Layout/Layout";
 import SoporteTecnico from "../components/SoporteTecnico/SoporteTecnico";
 import FAQ from "../components/SoporteTecnico/FAQ";
-import VideoTutoriales from "../components/SoporteTecnico/VideoTutoriales";
+import VideoTutoriales from "../components/Videos/VideoTutoriales";
 
 export default function Home() {
   return (
