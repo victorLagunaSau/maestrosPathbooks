@@ -61,5 +61,3 @@ li.check:before {
 .slick-dots .slick-active span {
   @apply bg-blue-500 rounded-l-full rounded-r-full w-12;
 }
-
-

@@ -1,10 +1,12 @@
 module.exports = {
+    // Rutas de contenido
     content: [
         "./pages/*.js",
         "./pages/**/*.js",
         "./components/*.js",
         "./components/**/*.js",
     ],
+    // Configuración de DaisyUI Themes
     daisyui: {
         themes: [
             {
