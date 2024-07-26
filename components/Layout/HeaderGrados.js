@@ -104,7 +104,7 @@ const Header = () => {
               }
             >
               								<img
-									src="/assets/icon/headerInicio.png"
+									src="/assets/Icon/headerInicio.png"
 									alt="Icono"
 									style={{width: "28px", height: "28px"}}
 								/>
@@ -127,7 +127,7 @@ const Header = () => {
               }
             >
              								<img
-									src="/assets/icon/headerPromo.png"
+									src="/assets/Icon/headerPromo.png"
 
 									alt="Icono"
 									style={{width: "28px", height: "28px"}}
@@ -151,7 +151,7 @@ const Header = () => {
               }
             >
 								<img
-									src="/assets/icon/headerCalendario.png"
+									src="/assets/Icon/headerCalendario.png"
 									alt="Icono"
 									style={{width: "28px", height: "28px"}}
 								/>

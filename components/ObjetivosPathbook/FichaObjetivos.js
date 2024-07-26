@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import {ReactToPrint} from "react-to-print";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+import {faPrint, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
 import FichaHero from "./FichaHero";
 import FichaFomentar from "./FichaFomentar";
 import FichaGamificar from "./FichaGamificar";

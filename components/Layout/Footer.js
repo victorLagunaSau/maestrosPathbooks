@@ -22,7 +22,7 @@ const Footer = () => {
 
 							>
 								<img
-									src="/assets/icon/facebook.svg"
+									src="/assets/Icon/facebook.svg"
 									className="h-6 w-6"
 									alt="https://www.facebook.com/pathbooks"
 								/>
@@ -37,7 +37,7 @@ const Footer = () => {
 
 							>
 								<img
-									src="/assets/icon/twitter.svg"
+									src="/assets//Icon/twitter.svg"
 									className="h-6 w-6"
 									alt=""
 								/>
@@ -51,7 +51,7 @@ const Footer = () => {
 
 							>
 								<img
-									src="/assets/icon/instagram.svg"
+									src="/assets//Icon/instagram.svg"
 									className="h-6 w-6"
 									alt=""
 								/>

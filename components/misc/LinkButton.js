@@ -6,11 +6,11 @@ const LinkButton = ({ buttonName, hrefUrl, linkTipo, size }) => {
     },
     email: {
       buttonClass: 'link link-info text-blue-500 hover:text-blue-300 transition-all',
-      iconSrc: '/assets/icon/email.png',
+      iconSrc: '/assets/Icon/email.png',
     },
     whatsapp: {
       buttonClass: 'link link-success text-green-500 hover:text-green-300 transition-all',
-      iconSrc: '/assets/icon/whatsapp.png',
+      iconSrc: '/assets/Icon/whatsapp.png',
     },
   };
 

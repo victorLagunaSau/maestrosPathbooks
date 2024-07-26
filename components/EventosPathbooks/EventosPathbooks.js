@@ -1,7 +1,9 @@
+import Image from "next/image";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
+import CopyButton from "../../components/misc/CopyButton";
 import LinkButton from "../../components/misc/LinkButton";
 
 const events = [
@@ -59,6 +61,7 @@ const EventosPathbooks = () => {
                    <img
                     src={event.image}
                     alt={event.title}
+                    layout="responsive"
                     width={500}
                     height={null}
                     className="rounded"

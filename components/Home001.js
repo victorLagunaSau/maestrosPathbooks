@@ -7,6 +7,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Home001 = () => {
 	const [scrollActive, setScrollActive] = useState(false);
+	 const [activeLink, setActiveLink] = useState(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -41,7 +42,8 @@ const Home001 = () => {
 								spy={true}
 								smooth={true}
 								duration={1000}
-								className="btn btn-outline py-2 px-5 sm:px-8 border-blue-400 text-blue-400 bg-white-500 hover:bg-blue-700 hover:text-blue-400 transition-all hover:shadow-blue-700"
+								onSetActive={() => setActiveLink(link.id)}
+										className="btn btn-outline py-2 px-5 sm:px-8 border-blue-400 text-blue-400 bg-white-500 hover:bg-blue-700 hover:text-blue-400 transition-all hover:shadow-blue-700"
 							>
 								{link.text}
 							</LinkScroll>
@@ -55,8 +57,8 @@ const Home001 = () => {
 					<motion.div variants={scrollAnimation} className="hidden lg:inline-block" >
 						<Image
 							src="/assets/headermaestra.png"
-							height={270}
-							width={300}
+							height={270} // Mitad del tamaño original (370 / 2)
+							width={300}  // Mitad del tamaño original (400 / 2)
 						/>
 					</motion.div>
 				</ScrollAnimationWrapper>

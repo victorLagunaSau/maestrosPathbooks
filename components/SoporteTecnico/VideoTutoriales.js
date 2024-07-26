@@ -1,32 +1,10 @@
 import React, {useState} from "react";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
+import ScrollAnimationWrapper from "../../components/Layout/ScrollAnimationWrapper";
 
 const videoTutorialesData = [
-
     {
-        title: "Como usar pathbooks",
-        subtitle: "Capacitacion: Primera parte",
-        description: "En este video se cubren los aspectos iniciales de la capacitación, y se dan recomendaciones de lectura para todos los grados.",
-        src: "https://www.youtube.com/embed/F7rR-4Khwks",
-        thumbnail: "https://img.youtube.com/vi/F7rR-4Khwks/0.jpg",
-    },
-    {
-        title: "Asignar lecturas",
-        subtitle: "Capacitacion: Segunda parte",
-        description: "Este video continúa con el tema de asignacion de lecturas, como revisar que los estudiantes si llen en la plataforma, ademas de ayudar a intrpretar el trabajo de nuestros estudiantes.",
-        src: "https://www.youtube.com/embed/jOZSzpqiyy0",
-        thumbnail: "https://img.youtube.com/vi/jOZSzpqiyy0/0.jpg",
-    },
-    {
-        title: "Portal de Maestros PATHBOOKS",
-        subtitle: "Capacitacion: Tercera parte",
-        description: "Este video continúa con el tema de asignacion de lecturas, como revisar que los estudiantes si llen en la plataforma, ademas de ayudar a intrpretar el trabajo de nuestros estudiantes.",
-        src: "https://www.youtube.com/embed/FIrISXoJsjw",
-        thumbnail: "https://img.youtube.com/vi/FIrISXoJsjw/0.jpg",
-    },
-        {
         title: "Pathbooks Plataforma de lectura interactiva",
         subtitle: "Introducción a la plataforma",
         description: "Este video es una introducción a la plataforma de lectura interactiva Pathbooks.",
@@ -34,11 +12,18 @@ const videoTutorialesData = [
         thumbnail: "https://img.youtube.com/vi/SVDATXnwXEw/0.jpg",
     },
     {
-        title: "Shark Tank Mexico - Pathbooks",
-        subtitle: "¡Leer libros núnca fue tan divertido!",
-        description: "Con Pathbooks Kassandra Rodriguez y Jorge Caballero pretenden fomentar el amor por la lectura con una plataforma interactiva donde los usuarios tienen la posibilidad de cambiar el rumbo de la historia ¿Será un final feliz para estos ratones de biblioteca?",
-        src: "https://www.youtube.com/embed/dLAXk4skWVk",
-        thumbnail: "https://img.youtube.com/vi/dLAXk4skWVk/0.jpg",
+        title: "Como usar pathbooks",
+        subtitle: "Capacitacion Primera parte",
+        description: "En este video se cubren los aspectos iniciales de la capacitación, y se dan recomendaciones de lectura para todos los grados.",
+        src: "https://www.youtube.com/embed/F7rR-4Khwks",
+        thumbnail: "https://img.youtube.com/vi/F7rR-4Khwks/0.jpg",
+    },
+    {
+        title: "Asignar lecturas",
+        subtitle: "Capacitacion Segunda parte",
+        description: "Este video continúa con el tema de asignacion de lecturas, como revisar que los estudiantes si llen en la plataforma, ademas de ayudar a intrpretar el trabajo de nuestros estudiantes.",
+        src: "https://www.youtube.com/embed/jOZSzpqiyy0",
+        thumbnail: "https://img.youtube.com/vi/jOZSzpqiyy0/0.jpg",
     },
 ];
 
@@ -100,15 +85,15 @@ const VideoTutoriales = () => {
                             {videoTutorialesData.map((video, index) => (
                                 <div
                                     key={index}
-                                    className="carousel-item cursor-pointer p-2 border bg-white-500 rounded-lg hover:bg-gray-100 transition flex items-center m-2"
+                                    className="carousel-item cursor-pointer p-2 border bg-white-500 rounded-lg hover:bg-gray-100 transition flex items-center m-1"
                                     onClick={() => handleVideoChange(video)}
                                     style={{maxWidth: "500px"}}
                                 >
-                                    <img src={video.thumbnail} alt={video.title} className="w-1/8 h-auto rounded"
-                                         style={{maxHeight: "80px"}}/>
+                                    <img src={video.thumbnail} alt={video.title} className="w-1/3 h-auto rounded"
+                                         style={{maxHeight: "200px"}}/>
                                     <div className="ml-4 w-2/3">
-                                        <div className="text-xl font-medium text-black-500 ">{video.title}</div>
-                                        <div className="text text-gray-600">{video.subtitle}</div>
+                                        <div className="text-sm font-medium">{video.title}</div>
+                                        <div className="text-xs text-gray-600">{video.subtitle}</div>
                                     </div>
                                 </div>
                             ))}
